@@ -17,7 +17,9 @@
 
 #import "YYFPSLabel.h"
 
-@interface LGTimeLineViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface LGTimeLineViewController ()<UITableViewDelegate,UITableViewDataSource>{
+    BOOL _notStarted;
+}
 
 @property (nonatomic, strong) UITableView *timeLineTableView;
 @property (nonatomic, strong) NSMutableArray<TimeLineModel *> *timeLineModels;
@@ -25,6 +27,7 @@
 
 
 @property (nonatomic, strong) YYFPSLabel * label;
+
 @end
 
 @implementation LGTimeLineViewController
@@ -49,6 +52,7 @@
     CGRect bounds = [[UIScreen mainScreen] bounds];
     self.label = [[YYFPSLabel alloc] initWithFrame: CGRectMake(20, 20, bounds.size.width - 20 * 2, 80)];
     [self.view addSubview: self.label];
+    _notStarted = true;
 }
 
 
@@ -144,6 +148,15 @@
         };
     
         return cell;
+}
+
+
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if (_notStarted){
+        [self.label reset];
+        _notStarted = NO;
+    }
 }
 
 

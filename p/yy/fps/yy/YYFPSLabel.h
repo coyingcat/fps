@@ -17,4 +17,8 @@
  */
 @interface YYFPSLabel : UILabel
 
+
+- (void) reset;
+
+
 @end

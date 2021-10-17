@@ -23,6 +23,8 @@
     UIFont *_subFont;
     
     NSTimeInterval _llll;
+    
+    NSInteger _minNum;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -30,7 +32,7 @@
         frame.size = kSize;
     }
     self = [super initWithFrame:frame];
-    
+    _minNum = 100;
     self.layer.cornerRadius = 5;
     self.clipsToBounds = YES;
     self.textAlignment = NSTextAlignmentCenter;
@@ -74,7 +76,10 @@
     CGFloat progress = fps / 60.0;
     UIColor *color = [UIColor colorWithHue:0.27 * (progress - 0.2) saturation:1 brightness:0.9 alpha:1];
     
-    NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%d FPS",(int)round(fps)]];
+    
+    self->_minNum = MIN(self->_minNum , (int)round(fps));
+    
+    NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%ld FPS", self->_minNum ]];
     [text setColor:color range:NSMakeRange(0, text.length - 3)];
     [text setColor:[UIColor whiteColor] range:NSMakeRange(text.length - 3, 3)];
     text.font = _font;
@@ -83,4 +88,8 @@
     self.attributedText = text;
 }
 
+
+- (void) reset{
+    self->_minNum = 100;
+}
 @end
