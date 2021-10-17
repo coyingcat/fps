@@ -22,3 +22,6 @@
 
 
 @end
+
+
+// min FPS Label, 出于截屏的需要
