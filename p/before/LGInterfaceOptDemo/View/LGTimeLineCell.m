@@ -39,12 +39,6 @@ NSString *ResuseID = @"LGTimeLineCell";
     // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
-
 - (void)configureTimeLineCell:(LGTimeLineModel *)timeLineModel{
     
    _timeLineModel = timeLineModel;
@@ -154,7 +148,6 @@ NSString *ResuseID = @"LGTimeLineCell";
              for (int i = 0; i < self.contentImageBtns.count; i++) {
                  UIButton *btn = self.contentImageBtns[i];
                  btn.tag = CONTENT_BTN_TAG_CONST + i;
-                 [btn addTarget:self action:@selector(contentImageClick:) forControlEvents:UIControlEventTouchUpInside];
                  NSString *imageStr = timeLineModel.contentImages[i];
                  [btn sd_setImageWithURL:[NSURL URLWithString:imageStr] forState:UIControlStateNormal];
 
@@ -201,15 +194,6 @@ NSString *ResuseID = @"LGTimeLineCell";
         make.left.equalTo(headIconBtn.mas_right).offset(11);
         make.top.equalTo(self).offset(17);
     }];
-    
-//    UIImageView *sexIconView = [[UIImageView alloc] init];
-//    [self.contentView addSubview:sexIconView];
-//    self.sexIconView = sexIconView;
-//    [sexIconView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.equalTo(headIconBtn.mas_right).offset(9);
-//        make.top.equalTo(nameLabel.mas_bottom).offset(6);
-//        make.width.height.equalTo(@12);
-//    }];
     
     UILabel *contentLabel = [[UILabel alloc] init];
     contentLabel.numberOfLines = 0;
@@ -264,11 +248,6 @@ NSString *ResuseID = @"LGTimeLineCell";
     return rect.size.height;
 }
 
-- (void)contentImageClick:(UIButton *)btn {
-    if (self.previewPhotosBlock) {
-        self.previewPhotosBlock(_timeLineModel.contentImages,(int)(btn.tag - CONTENT_BTN_TAG_CONST));
-    }
-    
-}
+
 
 @end
