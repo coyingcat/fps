@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		012891AB2426084D001A6753 /* timeLine.json in Resources */ = {isa = PBXBuildFile; fileRef = 012891AA2426084C001A6753 /* timeLine.json */; };
-		012BF6FD2418BC9400062869 /* LGTimeLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 012BF6FC2418BC9400062869 /* LGTimeLineModel.m */; };
+		012BF6FD2418BC9400062869 /* TimeLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 012BF6FC2418BC9400062869 /* TimeLineModel.m */; };
 		015F03CF24154764002E64C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 015F03CE24154764002E64C3 /* AppDelegate.m */; };
 		015F03D224154764002E64C3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 015F03D124154764002E64C3 /* SceneDelegate.m */; };
 		015F03D824154764002E64C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015F03D624154764002E64C3 /* Main.storyboard */; };
@@ -16,7 +16,7 @@
 		015F03DD24154767002E64C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015F03DB24154767002E64C3 /* LaunchScreen.storyboard */; };
 		015F03E024154767002E64C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 015F03DF24154767002E64C3 /* main.m */; };
 		015F040424154CFA002E64C3 /* LGTimeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015F040324154CFA002E64C3 /* LGTimeLineViewController.m */; };
-		015F040724154D3D002E64C3 /* LGTimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 015F040624154D3D002E64C3 /* LGTimeLineCell.m */; };
+		015F040724154D3D002E64C3 /* TimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 015F040624154D3D002E64C3 /* TimeLineCell.m */; };
 		09865DFB3212FBCE7ADF1C90 /* libPods-LGInterfaceOptDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 207CE91AB9EBE963CF58EE19 /* libPods-LGInterfaceOptDemo.a */; };
 		2658168A271C022E0053AAE0 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26581684271C022E0053AAE0 /* YYWeakProxy.m */; };
 		2658168B271C022F0053AAE0 /* NSAttributedString+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 26581686271C022E0053AAE0 /* NSAttributedString+YYText.m */; };
@@ -43,8 +43,7 @@
 /* Begin PBXFileReference section */
 		012891AA2426084C001A6753 /* timeLine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timeLine.json; sourceTree = "<group>"; };
 		012BF6FA2418BAB800062869 /* LGIntOptPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGIntOptPrefixHeader.pch; sourceTree = "<group>"; };
-		012BF6FB2418BC9400062869 /* LGTimeLineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGTimeLineModel.h; sourceTree = "<group>"; };
-		012BF6FC2418BC9400062869 /* LGTimeLineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGTimeLineModel.m; sourceTree = "<group>"; };
+		012BF6FC2418BC9400062869 /* TimeLineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeLineModel.m; sourceTree = "<group>"; };
 		015F03CA24154764002E64C3 /* before.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = before.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		015F03CD24154764002E64C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		015F03CE24154764002E64C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -59,8 +58,8 @@
 		015F03F024154767002E64C3 /* LGInterfaceOptDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LGInterfaceOptDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		015F040224154CFA002E64C3 /* LGTimeLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGTimeLineViewController.h; sourceTree = "<group>"; };
 		015F040324154CFA002E64C3 /* LGTimeLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGTimeLineViewController.m; sourceTree = "<group>"; };
-		015F040524154D3D002E64C3 /* LGTimeLineCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGTimeLineCell.h; sourceTree = "<group>"; };
-		015F040624154D3D002E64C3 /* LGTimeLineCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGTimeLineCell.m; sourceTree = "<group>"; };
+		015F040524154D3D002E64C3 /* TimeLineCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeLineCell.h; sourceTree = "<group>"; };
+		015F040624154D3D002E64C3 /* TimeLineCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeLineCell.m; sourceTree = "<group>"; };
 		207CE91AB9EBE963CF58EE19 /* libPods-LGInterfaceOptDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LGInterfaceOptDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26581684271C022E0053AAE0 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
 		26581685271C022E0053AAE0 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		26581687271C022E0053AAE0 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
 		26581688271C022E0053AAE0 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
 		26581689271C022E0053AAE0 /* NSAttributedString+YYText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+YYText.h"; sourceTree = "<group>"; };
+		26581697271C17870053AAE0 /* TimeLineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineModel.h; sourceTree = "<group>"; };
 		9C9D87B1CBF1EDBDC1B8C221 /* Pods-LGInterfaceOptDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGInterfaceOptDemo.release.xcconfig"; path = "Target Support Files/Pods-LGInterfaceOptDemo/Pods-LGInterfaceOptDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FE33CF472E097E099B7CDB02 /* Pods-LGInterfaceOptDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGInterfaceOptDemo.debug.xcconfig"; path = "Target Support Files/Pods-LGInterfaceOptDemo/Pods-LGInterfaceOptDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,8 +101,8 @@
 		012BF7042419333200062869 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				012BF6FB2418BC9400062869 /* LGTimeLineModel.h */,
-				012BF6FC2418BC9400062869 /* LGTimeLineModel.m */,
+				26581697271C17870053AAE0 /* TimeLineModel.h */,
+				012BF6FC2418BC9400062869 /* TimeLineModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,8 +110,8 @@
 		012BF7052419334F00062869 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				015F040524154D3D002E64C3 /* LGTimeLineCell.h */,
-				015F040624154D3D002E64C3 /* LGTimeLineCell.m */,
+				015F040524154D3D002E64C3 /* TimeLineCell.h */,
+				015F040624154D3D002E64C3 /* TimeLineCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -375,11 +375,11 @@
 			files = (
 				2658168C271C022F0053AAE0 /* YYFPSLabel.m in Sources */,
 				2658168B271C022F0053AAE0 /* NSAttributedString+YYText.m in Sources */,
-				015F040724154D3D002E64C3 /* LGTimeLineCell.m in Sources */,
+				015F040724154D3D002E64C3 /* TimeLineCell.m in Sources */,
 				2658168A271C022E0053AAE0 /* YYWeakProxy.m in Sources */,
 				015F03CF24154764002E64C3 /* AppDelegate.m in Sources */,
 				015F03E024154767002E64C3 /* main.m in Sources */,
-				012BF6FD2418BC9400062869 /* LGTimeLineModel.m in Sources */,
+				012BF6FD2418BC9400062869 /* TimeLineModel.m in Sources */,
 				015F040424154CFA002E64C3 /* LGTimeLineViewController.m in Sources */,
 				015F03D224154764002E64C3 /* SceneDelegate.m in Sources */,
 			);
