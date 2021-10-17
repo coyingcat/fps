@@ -67,7 +67,6 @@ NSString *ResuseID = @"LGTimeLineCell";
     for (int i = 0; i < 9; i++) {
         UIButton *btn = [[UIButton alloc] init];
         btn.tag = CONTENT_BTN_TAG_CONST + i;
-        [btn addTarget:self action:@selector(contentImageClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:btn];
         [self.contentImageBtns addObject:btn];
     }

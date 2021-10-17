@@ -53,7 +53,7 @@
 		012BF7072419544200062869 /* timeLine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timeLine.json; sourceTree = "<group>"; };
 		012BF70A2419722B00062869 /* UIImage+cornerRadious.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+cornerRadious.h"; sourceTree = "<group>"; };
 		012BF70B2419722B00062869 /* UIImage+cornerRadious.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+cornerRadious.m"; sourceTree = "<group>"; };
-		015F03CA24154764002E64C3 /* LGInterfaceOptDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGInterfaceOptDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		015F03CA24154764002E64C3 /* after.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = after.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		015F03CD24154764002E64C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		015F03CE24154764002E64C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		015F03D024154764002E64C3 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 		015F03CB24154764002E64C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				015F03CA24154764002E64C3 /* LGInterfaceOptDemo.app */,
+				015F03CA24154764002E64C3 /* after.app */,
 				015F03E524154767002E64C3 /* LGInterfaceOptDemoTests.xctest */,
 				015F03F024154767002E64C3 /* LGInterfaceOptDemoUITests.xctest */,
 			);
@@ -245,9 +245,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		015F03C924154764002E64C3 /* LGInterfaceOptDemo */ = {
+		015F03C924154764002E64C3 /* after */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 015F03F924154767002E64C3 /* Build configuration list for PBXNativeTarget "LGInterfaceOptDemo" */;
+			buildConfigurationList = 015F03F924154767002E64C3 /* Build configuration list for PBXNativeTarget "after" */;
 			buildPhases = (
 				75505EFF717817CBC4B5F5C5 /* [CP] Check Pods Manifest.lock */,
 				015F03C624154764002E64C3 /* Sources */,
@@ -259,9 +259,9 @@
 			);
 			dependencies = (
 			);
-			name = LGInterfaceOptDemo;
+			name = after;
 			productName = LGInterfaceOptDemo;
-			productReference = 015F03CA24154764002E64C3 /* LGInterfaceOptDemo.app */;
+			productReference = 015F03CA24154764002E64C3 /* after.app */;
 			productType = "com.apple.product-type.application";
 		};
 		015F03E424154767002E64C3 /* LGInterfaceOptDemoTests */ = {
@@ -335,7 +335,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				015F03C924154764002E64C3 /* LGInterfaceOptDemo */,
+				015F03C924154764002E64C3 /* after */,
 				015F03E424154767002E64C3 /* LGInterfaceOptDemoTests */,
 				015F03EF24154767002E64C3 /* LGInterfaceOptDemoUITests */,
 			);
@@ -452,12 +452,12 @@
 /* Begin PBXTargetDependency section */
 		015F03E724154767002E64C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 015F03C924154764002E64C3 /* LGInterfaceOptDemo */;
+			target = 015F03C924154764002E64C3 /* after */;
 			targetProxy = 015F03E624154767002E64C3 /* PBXContainerItemProxy */;
 		};
 		015F03F224154767002E64C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 015F03C924154764002E64C3 /* LGInterfaceOptDemo */;
+			target = 015F03C924154764002E64C3 /* after */;
 			targetProxy = 015F03F124154767002E64C3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -607,7 +607,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-888.666.111";
+				PRODUCT_BUNDLE_IDENTIFIER = "-888.666.111.3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -626,7 +626,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-888.666.111";
+				PRODUCT_BUNDLE_IDENTIFIER = "-888.666.111.3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -716,7 +716,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		015F03F924154767002E64C3 /* Build configuration list for PBXNativeTarget "LGInterfaceOptDemo" */ = {
+		015F03F924154767002E64C3 /* Build configuration list for PBXNativeTarget "after" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				015F03FA24154767002E64C3 /* Debug */,
