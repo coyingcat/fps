@@ -21,7 +21,6 @@ typedef void(^LGPreviewPhotosBlock)(NSMutableArray *icons,int i);
 @property (nonatomic, copy) LGExpandBlock expandBlock;
 @property (nonatomic, copy) LGPreviewPhotosBlock previewPhotosBlock;
 
-- (void)configureTimeLineCell:(LGTimeLineModel *)timeLineModel;
 - (void)configureLayout:(LGTimeLineCellLayout *)layout;
 
 
