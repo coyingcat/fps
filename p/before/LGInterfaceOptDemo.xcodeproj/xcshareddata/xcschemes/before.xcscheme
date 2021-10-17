@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "015F03C924154764002E64C3"
-               BuildableName = "LGInterfaceOptDemo.app"
-               BlueprintName = "LGInterfaceOptDemo"
+               BuildableName = "before.app"
+               BlueprintName = "before"
                ReferencedContainer = "container:LGInterfaceOptDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -65,8 +65,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "015F03C924154764002E64C3"
-            BuildableName = "LGInterfaceOptDemo.app"
-            BlueprintName = "LGInterfaceOptDemo"
+            BuildableName = "before.app"
+            BlueprintName = "before"
             ReferencedContainer = "container:LGInterfaceOptDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -82,8 +82,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "015F03C924154764002E64C3"
-            BuildableName = "LGInterfaceOptDemo.app"
-            BlueprintName = "LGInterfaceOptDemo"
+            BuildableName = "before.app"
+            BlueprintName = "before"
             ReferencedContainer = "container:LGInterfaceOptDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
