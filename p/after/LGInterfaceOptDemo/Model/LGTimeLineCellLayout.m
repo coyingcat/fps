@@ -13,7 +13,6 @@ static const CGFloat nameLeftSpaceToHeadIcon = 10;
 static const CGFloat titleFont = 15;
 static const CGFloat msgFont = 15;
 static const CGFloat msgExpandLimitHeight = 140;
-static const CGFloat timeAndLocationFont = 13;
 
 @interface LGTimeLineCellLayout ()
 
@@ -81,13 +80,9 @@ static const CGFloat timeAndLocationFont = 13;
         self.expandRect = CGRectMake(10, CGRectGetMaxY(self.contentRect) + 10, 30, 20);
     }
     
-    
-    CGFloat timeWidth = [self calcWidthWithTitle:_timeLineModel.time font:timeAndLocationFont];
-    CGFloat timeHeight = [self calcLabelHeight:_timeLineModel.time fontSize:timeAndLocationFont width:timeWidth];
+
     self.imageRects = [NSMutableArray array];
-    if (_timeLineModel.contentImages.count == 0) {
-//        self.timeRect = CGRectMake(10, CGRectGetMaxY(self.expandRect) + 10, timeWidth, timeHeight);
-    } else {
+    if (_timeLineModel.contentImages.count > 0){
         if (_timeLineModel.contentImages.count == 1) {
             CGRect imageRect = CGRectMake(11, CGRectGetMaxY(self.expandRect) + 10, 250, 150);
             [self.imageRects addObject:@(imageRect)];
