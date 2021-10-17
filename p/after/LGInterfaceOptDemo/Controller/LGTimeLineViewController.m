@@ -71,10 +71,13 @@
               NSString *path = [[NSBundle mainBundle] pathForResource:@"timeLine" ofType:@"json"];
               NSData *data = [[NSData alloc] initWithContentsOfFile:path];
               NSDictionary *dicJson=[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-              for (id json in dicJson[@"data"]) {
-                  LGTimeLineModel *timeLineModel = [LGTimeLineModel yy_modelWithJSON:json];
-                  [self.timeLineModels addObject:timeLineModel];
-              }
+            for (int i = 0; i < 30; i++) {
+                for (id json in dicJson[@"data"]) {
+                    LGTimeLineModel *timeLineModel = [LGTimeLineModel yy_modelWithJSON:json];
+                    [self.timeLineModels addObject:timeLineModel];
+                }
+            }
+              
            
                for (LGTimeLineModel *timeLineModel in self.timeLineModels) {
                    LGTimeLineCellLayout *cellLayout = [[LGTimeLineCellLayout alloc] initWithModel:timeLineModel];
