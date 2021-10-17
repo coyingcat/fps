@@ -1,12 +1,12 @@
 //
-//  LGTimeLineCellLayout.m
+//  TimeLineCellLayout.m
 //  LGInterfaceOptDemo
 //
 //  Created by cooci on 2020/4/12.
 //
 
-#import "LGTimeLineCellLayout.h"
-#import "LGTimeLineModel.h"
+#import "TimeLineCellLayout.h"
+#import "TimeLineModel.h"
 #import <CoreText/CoreText.h>
 
 static const CGFloat nameLeftSpaceToHeadIcon = 10;
@@ -14,14 +14,14 @@ static const CGFloat titleFont = 15;
 static const CGFloat msgFont = 15;
 static const CGFloat msgExpandLimitHeight = 140;
 
-@interface LGTimeLineCellLayout ()
+@interface TimeLineCellLayout ()
 
 
 @end
 
-@implementation LGTimeLineCellLayout
+@implementation TimeLineCellLayout
 
-- (instancetype)initWithModel:(LGTimeLineModel *)timeLineModel{
+- (instancetype)initWithModel:(TimeLineModel *)timeLineModel{
     if (!timeLineModel) return nil;
     self = [super init];
     if (self) {
@@ -31,7 +31,7 @@ static const CGFloat msgExpandLimitHeight = 140;
     return self;
 }
 
-- (void)setTimeLineModel:(LGTimeLineModel *)timeLineModel{
+- (void)setTimeLineModel:(TimeLineModel *)timeLineModel{
     _timeLineModel = timeLineModel;
     [self layout];
 }

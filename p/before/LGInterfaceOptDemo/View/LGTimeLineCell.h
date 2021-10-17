@@ -1,5 +1,5 @@
 //
-//  LGTimeLineCell.h
+//  TimeLineCell.h
 //  LGInterfaceOptDemo
 //
 //  Created by cooci on 2020/4/12.
@@ -11,14 +11,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 extern NSString *ResuseID;
 
-@class LGTimeLineModel;
+@class TimeLineModel;
 
 typedef void(^LGExpandBlock)(BOOL isExpand);
 typedef void(^LGPreviewPhotosBlock)(NSMutableArray *icons,int i);
 
-@interface LGTimeLineCell : UITableViewCell
+@interface TimeLineCell : UITableViewCell
 
-- (void)configureTimeLineCell:(LGTimeLineModel *)timeLineModel;
+- (void)configureTimeLineCell:(TimeLineModel *)timeLineModel;
 @property (nonatomic, copy) LGExpandBlock expandBlock;
 @property (nonatomic, copy) LGPreviewPhotosBlock previewPhotosBlock;
 

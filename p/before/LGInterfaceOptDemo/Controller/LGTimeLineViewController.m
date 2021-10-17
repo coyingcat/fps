@@ -11,8 +11,8 @@
 
 #import "LGTimeLineViewController.h"
 #import "Masonry.h"
-#import "LGTimeLineModel.h"
-#import "LGTimeLineCell.h"
+#import "TimeLineModel.h"
+#import "TimeLineCell.h"
 #import "YYModel.h"
 
 #import "YYFPSLabel.h"
@@ -20,7 +20,7 @@
 @interface LGTimeLineViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *timeLineTableView;
-@property (nonatomic, strong) NSMutableArray<LGTimeLineModel *> *timeLineModels;
+@property (nonatomic, strong) NSMutableArray<TimeLineModel *> *timeLineModels;
 @property (nonatomic, strong) NSMutableArray *photos;
 
 
@@ -75,7 +75,7 @@
     NSDictionary *dicJson=[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
     for (int i = 0; i < 30; i++) {
         for (id json in dicJson[@"data"]) {
-            LGTimeLineModel *timeLineModel = [LGTimeLineModel yy_modelWithJSON:json];
+            TimeLineModel *timeLineModel = [TimeLineModel yy_modelWithJSON:json];
             [self.timeLineModels addObject:timeLineModel];
         }
     }
@@ -86,7 +86,7 @@
 #pragma mark -- UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    LGTimeLineModel *timeLineModel = self.timeLineModels[indexPath.row];
+    TimeLineModel *timeLineModel = self.timeLineModels[indexPath.row];
 
     timeLineModel.cacheId = indexPath.row + 1;
    
@@ -98,7 +98,7 @@
         stateKey = @"unexpanded";
     }
     
-    LGTimeLineCell *cell = [[LGTimeLineCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    TimeLineCell *cell = [[TimeLineCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     
     [cell configureTimeLineCell:timeLineModel];
     
@@ -127,9 +127,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-       LGTimeLineCell *cell = [tableView dequeueReusableCellWithIdentifier:ResuseID];
+       TimeLineCell *cell = [tableView dequeueReusableCellWithIdentifier:ResuseID];
 
-       LGTimeLineModel *timeLineModel = self.timeLineModels[indexPath.row];
+       TimeLineModel *timeLineModel = self.timeLineModels[indexPath.row];
        [cell configureTimeLineCell:timeLineModel];
         cell.expandBlock = ^(BOOL isExpand) {
             timeLineModel.expand = isExpand;
@@ -156,12 +156,12 @@
         _timeLineTableView.dataSource = self;
         _timeLineTableView.delegate = self;
         _timeLineTableView.backgroundColor = [UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1];
-        [_timeLineTableView registerClass:[LGTimeLineCell class] forCellReuseIdentifier:ResuseID];
+        [_timeLineTableView registerClass:[TimeLineCell class] forCellReuseIdentifier:ResuseID];
     }
     return _timeLineTableView;
 }
 
-- (NSMutableArray<LGTimeLineModel *> *)timeLineModels{
+- (NSMutableArray<TimeLineModel *> *)timeLineModels{
     if (!_timeLineModels) {
         _timeLineModels = [NSMutableArray arrayWithCapacity:0];
     }

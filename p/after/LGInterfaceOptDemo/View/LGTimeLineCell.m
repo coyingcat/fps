@@ -1,23 +1,23 @@
 //
-//  LGTimeLineCell.m
+//  TimeLineCell.m
 //  LGInterfaceOptDemo
 //
 //  Created by cooci on 2020/4/12.
 //
 
-#import "LGTimeLineCell.h"
+#import "TimeLineCell.h"
 #import "UIButton+WebCache.h"
-#import "LGTimeLineModel.h"
+#import "TimeLineModel.h"
 #import "Masonry.h"
-#import "LGTimeLineCellLayout.h"
+#import "TimeLineCellLayout.h"
 #import "UIImage+cornerRadious.h"
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define CONTENT_BTN_TAG_CONST 10000
 
-NSString *ResuseID = @"LGTimeLineCell";
+NSString *ResuseID = @"TimeLineCell";
 
-@interface LGTimeLineCell ()
+@interface TimeLineCell ()
 
 @property (nonatomic, strong) UIButton *iconButton;
 @property (nonatomic, strong) UILabel *nameLabel;
@@ -29,11 +29,11 @@ NSString *ResuseID = @"LGTimeLineCell";
 @property (nonatomic, strong) UIButton *expandBtn;
 @property (nonatomic, assign) BOOL isExpandedNow;
 
-@property (nonatomic, strong) LGTimeLineCellLayout *layout;
+@property (nonatomic, strong) TimeLineCellLayout *layout;
 
 @end
 
-@implementation LGTimeLineCell
+@implementation TimeLineCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -71,7 +71,7 @@ NSString *ResuseID = @"LGTimeLineCell";
     [self.contentView addSubview:self.seperatorView];
 }
 
-- (void)configureLayout:(LGTimeLineCellLayout *)layout{
+- (void)configureLayout:(TimeLineCellLayout *)layout{
     
     _layout = layout;
     

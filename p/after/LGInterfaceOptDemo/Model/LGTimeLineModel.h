@@ -1,5 +1,5 @@
 //
-//  LGTimeLineModel.h
+//  TimeLineModel.h
 //  LGInterfaceOptDemo
 //
 //  Created by cooci on 2020/4/12.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LGTimeLineModel : NSObject
+@interface TimeLineModel : NSObject
 
 @property (nonatomic, copy) NSString *iconUrl;
 @property (nonatomic, copy) NSString *name;

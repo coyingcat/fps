@@ -1,5 +1,5 @@
 //
-//  LGTimeLineCellLayout.h
+//  TimeLineCellLayout.h
 //  LGInterfaceOptDemo
 //
 //  Created by cooci on 2020/4/12.
@@ -9,11 +9,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class LGTimeLineModel;
+@class TimeLineModel;
 
-@interface LGTimeLineCellLayout : NSObject
+@interface TimeLineCellLayout : NSObject
 
-- (instancetype)initWithModel:(LGTimeLineModel *)timeLineModel;
+- (instancetype)initWithModel:(TimeLineModel *)timeLineModel;
 
 @property (nonatomic, assign) CGRect iconRect;
 @property (nonatomic, assign) CGRect nameRect;
@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) CGFloat height;
 
-@property (nonatomic, strong) LGTimeLineModel *timeLineModel;
+@property (nonatomic, strong) TimeLineModel *timeLineModel;
 
 @end
 

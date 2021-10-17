@@ -1,13 +1,13 @@
 //
-//  LGTimeLineModel.m
+//  TimeLineModel.m
 //  LGInterfaceOptDemo
 //
 //  Created by vampire on 2019/3/11.
 //  Copyright © 2019 LGEDU. All rights reserved.
 //
 
-#import "LGTimeLineModel.h"
+#import "TimeLineModel.h"
 
-@implementation LGTimeLineModel
+@implementation TimeLineModel
 
 @end
