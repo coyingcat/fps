@@ -22,6 +22,9 @@
 		015F040424154CFA002E64C3 /* LGTimeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015F040324154CFA002E64C3 /* LGTimeLineViewController.m */; };
 		015F040724154D3D002E64C3 /* LGTimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 015F040624154D3D002E64C3 /* LGTimeLineCell.m */; };
 		09865DFB3212FBCE7ADF1C90 /* libPods-LGInterfaceOptDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 207CE91AB9EBE963CF58EE19 /* libPods-LGInterfaceOptDemo.a */; };
+		26581694271C08530053AAE0 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2658168E271C08530053AAE0 /* YYWeakProxy.m */; };
+		26581695271C08530053AAE0 /* NSAttributedString+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 26581690271C08530053AAE0 /* NSAttributedString+YYText.m */; };
+		26581696271C08530053AAE0 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26581691271C08530053AAE0 /* YYFPSLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,12 @@
 		015F040524154D3D002E64C3 /* LGTimeLineCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGTimeLineCell.h; sourceTree = "<group>"; };
 		015F040624154D3D002E64C3 /* LGTimeLineCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGTimeLineCell.m; sourceTree = "<group>"; };
 		207CE91AB9EBE963CF58EE19 /* libPods-LGInterfaceOptDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LGInterfaceOptDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2658168E271C08530053AAE0 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
+		2658168F271C08530053AAE0 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		26581690271C08530053AAE0 /* NSAttributedString+YYText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+YYText.m"; sourceTree = "<group>"; };
+		26581691271C08530053AAE0 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		26581692271C08530053AAE0 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		26581693271C08530053AAE0 /* NSAttributedString+YYText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+YYText.h"; sourceTree = "<group>"; };
 		9C9D87B1CBF1EDBDC1B8C221 /* Pods-LGInterfaceOptDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGInterfaceOptDemo.release.xcconfig"; path = "Target Support Files/Pods-LGInterfaceOptDemo/Pods-LGInterfaceOptDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FE33CF472E097E099B7CDB02 /* Pods-LGInterfaceOptDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGInterfaceOptDemo.debug.xcconfig"; path = "Target Support Files/Pods-LGInterfaceOptDemo/Pods-LGInterfaceOptDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +174,7 @@
 		015F03CC24154764002E64C3 /* LGInterfaceOptDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2658168D271C08530053AAE0 /* yy */,
 				012BF7092419720D00062869 /* Utils */,
 				012BF7062419335B00062869 /* Controller */,
 				012BF7052419334F00062869 /* View */,
@@ -208,6 +218,20 @@
 				9C9D87B1CBF1EDBDC1B8C221 /* Pods-LGInterfaceOptDemo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		2658168D271C08530053AAE0 /* yy */ = {
+			isa = PBXGroup;
+			children = (
+				2658168E271C08530053AAE0 /* YYWeakProxy.m */,
+				2658168F271C08530053AAE0 /* YYFPSLabel.h */,
+				26581690271C08530053AAE0 /* NSAttributedString+YYText.m */,
+				26581691271C08530053AAE0 /* YYFPSLabel.m */,
+				26581692271C08530053AAE0 /* YYWeakProxy.h */,
+				26581693271C08530053AAE0 /* NSAttributedString+YYText.h */,
+			);
+			name = yy;
+			path = ../../yy/fps/yy;
 			sourceTree = "<group>";
 		};
 		E00171AF6ECFD1644E8AA190 /* Frameworks */ = {
@@ -282,7 +306,7 @@
 		015F03C224154764002E64C3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = LGEDU;
 				TargetAttributes = {
 					015F03C924154764002E64C3 = {
@@ -396,8 +420,11 @@
 				015F040724154D3D002E64C3 /* LGTimeLineCell.m in Sources */,
 				012BF70324191F6B00062869 /* LGTimeLineCellLayout.m in Sources */,
 				015F03CF24154764002E64C3 /* AppDelegate.m in Sources */,
+				26581696271C08530053AAE0 /* YYFPSLabel.m in Sources */,
 				015F03E024154767002E64C3 /* main.m in Sources */,
 				012BF6FD2418BC9400062869 /* LGTimeLineModel.m in Sources */,
+				26581694271C08530053AAE0 /* YYWeakProxy.m in Sources */,
+				26581695271C08530053AAE0 /* NSAttributedString+YYText.m in Sources */,
 				015F040424154CFA002E64C3 /* LGTimeLineViewController.m in Sources */,
 				012BF70C2419722B00062869 /* UIImage+cornerRadious.m in Sources */,
 				015F03D224154764002E64C3 /* SceneDelegate.m in Sources */,
@@ -481,6 +508,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -539,6 +567,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -571,14 +600,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 44QWS44BLE;
+				DEVELOPMENT_TEAM = D878P8TW6L;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LGInterfaceOptDemo/LGIntOptPrefixHeader.pch";
 				INFOPLIST_FILE = LGInterfaceOptDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LG.LGInterfaceOptDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = "-888.666.111";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -590,14 +619,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 44QWS44BLE;
+				DEVELOPMENT_TEAM = D878P8TW6L;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LGInterfaceOptDemo/LGIntOptPrefixHeader.pch";
 				INFOPLIST_FILE = LGInterfaceOptDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LG.LGInterfaceOptDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = "-888.666.111";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -12,12 +12,17 @@
 #import "LGTimeLineCellLayout.h"
 #import "YYModel.h"
 
+#import "YYFPSLabel.h"
 @interface LGTimeLineViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *timeLineTableView;
 @property (nonatomic, strong) NSMutableArray<LGTimeLineModel *> *timeLineModels;
 @property (nonatomic, strong) NSMutableArray *photos;
 @property (nonatomic, strong) NSMutableArray<LGTimeLineCellLayout *> *layouts;
+
+
+
+@property (nonatomic, strong) YYFPSLabel * label;
 
 @end
 
@@ -32,7 +37,20 @@
     [self combineUI];
     
     [self loadData];
+    
+    
+    [self fpsDo];
 }
+
+
+
+- (void)fpsDo{
+    CGRect bounds = [[UIScreen mainScreen] bounds];
+    self.label = [[YYFPSLabel alloc] initWithFrame: CGRectMake(20, 20, bounds.size.width - 20 * 2, 80)];
+    [self.view addSubview: self.label];
+}
+
+
 
 #pragma mark -- Private Method
 
